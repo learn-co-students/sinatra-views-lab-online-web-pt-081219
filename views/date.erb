@@ -1,0 +1,11 @@
+<% t = Time.now %>
+<% day = t.strftime("%A") %>
+<% month = t.strftime("%B") %>
+<% day_num = t.day.to_s %>
+<% year = t.year.to_s %>
+
+
+<% sentence = 'The date is ' + day + ', ' + month + ' ' + day_num + ', ' + year %>
+
+<h1>Today</h1>
+<p><%= sentence %></p>
